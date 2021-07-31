@@ -1,11 +1,12 @@
 import "tfplan/v2" as tfplan
 import "strings"
+import "decimal"
 
 v = strings.split(tfplan.terraform_version, ".")
 version_major = int(v[1])
 version_minor = int(v[2])
 
 main = rule {
-    #version_major is 103 and version_minor >= 1
-    version_major >= 103
+    #version_major is 1.0.3 and version_minor >= 1.0.0
+    version_major >= 1.0.3
 }
