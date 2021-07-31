@@ -1,6 +1,6 @@
 policy "check-terraform-version" {
     source            = "./check-terraform-version.sentinel"
-    enforcement_level = "hard-mandatory"
+    enforcement_level = "soft-mandatory"
 }
 
 policy "restrict-s3-buckets" {
